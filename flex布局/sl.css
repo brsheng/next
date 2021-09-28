@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+}
+.left{
+  width: 400px;
+  background-color: red;
+}
+.center{
+  background-color: blue;
+  word-break: break-word;
+}
+.right{
+  background-color: red;
+  width: 400px;
+}

@@ -1,0 +1,18 @@
+.main{
+  width: 100%;
+  display: table;
+}
+.left,.center,.right{
+  display: table-cell;
+}
+.left{
+  width: 300px;
+  background-color: red;
+}
+.center{
+  background-color: blue;
+}
+.right{
+  width: 300px;
+  background-color: red;
+}

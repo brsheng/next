@@ -1,0 +1,22 @@
+/* absolute:生成绝对定位的元素,相当于static定位以外的第一个父元素进行定位 */
+
+.left{
+  position: absolute;
+  left: 0;
+  width: 300px;
+  background-color: red;
+}
+
+.center {
+  position: absolute;
+  left: 300px;
+  right: 300px;
+  background-color: blue;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  background-color: #3A2CAC;
+}

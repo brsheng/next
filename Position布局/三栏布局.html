@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position布局</title>
+
+    <p>
+      position其属性有5种 : 
+
+      inherit: 继承父元素的position属性值 
+
+      static:默认值，没有定位 
+
+      fixed:生成绝对定位的元素,相对于浏览器窗口进行定位（不管屏幕内容怎么滑动,其位置不会改变）
+      
+      relative:生成相对定位,相对于其正常位置进行定位
+      
+      absolute:生成绝对定位的元素,相当于static定位以外的第一个父元素进行定位
+      
+      根据以上内容我们可以看出我们需要选择给 左 中 右 都使用 absolute绝对定位，
+      由于absolute是相当于static定位以外的第一个父元素进行定位，所以我们要给其父元素添加
+      position:relative属性, 这样这三个子元素可以相对于父元素进行绝对定位。
+    </p>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link href="./sl.css" rel="stylesheet" />
+  </head>
+  <body>
+    <article class="main">
+      <div class="left">左</div>
+      <div class="center">
+        中
+        <h2>绝对定位</h2>
+      </div>
+      <div class="right">右</div>
+    </article>
+  </body>
+</html>
